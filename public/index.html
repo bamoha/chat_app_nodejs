@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chat|site</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+<div id="content">
+	<div id="room">
+		
+	</div>
+	<div  id="roomlist">
+		
+	</div>
+	<div id="messages">
+		
+	</div>
+
+	<form id='send-form'>
+		<input id='send-message' />
+		<input id='send-button' type='submit' value='Send'/>
+		<div id='help'>
+			<ul>
+				<li>Change nickname: <code>/nick [username]</code></li>
+				<li>Join/create room: <code>/join [room name]</code></li>
+			</ul>
+		</div>
+	</form>
+</div>
+
+
+<script src='/socket.io/socket.io.js' type='text/javascript'></script>
+<script src='http://code.jquery.com/jquery-1.8.0.min.js' type='text/javascript'></script>
+<script src='/javascript/chat.js' type='text/javascript'></script>
+<script src='/javascript/chat_ui.js' type='text/javascript'></script>
+
+
+</body>
+</html>
